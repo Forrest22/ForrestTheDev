@@ -27,15 +27,18 @@ body {
   background-position: center 50%;
 }
 
+br {
+  margin: 1em;
+  display: block;
+}
+
 #blurb {
-  margin-top: clamp(3rem, 10vw, 48rem);
-  margin-left: clamp(4rem, 20vw, 48rem);
-  margin-right: clamp(4rem, 20vw, 48rem);
+  margin: clamp(3rem, 10vw, 48rem) clamp(4rem, 20vw, 48rem) 0
+    clamp(4rem, 20vw, 48rem);
   position: relative;
   z-index: 1;
 
   color: whitesmoke;
-  cursor: pointer;
   display: block;
   font-family: "Noto Sans JP", sans-serif;
   font-size: clamp(1rem, 1vw, 3rem);
@@ -44,6 +47,7 @@ body {
 }
 
 #menu-items {
+  margin-bottom: clamp(3rem, 10vw, 48rem);
   margin-left: clamp(4rem, 20vw, 48rem);
   position: relative;
   z-index: 2;
@@ -92,13 +96,12 @@ body {
   transition: opacity 800ms ease, background-size 800ms ease,
     background-position 800ms ease;
   width: 100vw;
-  z-index: 1;
 }
 
 #container-background-image {
   background-image: url("../img/forest.jpg");
   background-position: center 40%;
-  background-size: 110vmax;
+  background-size: 150vmax;
   height: 100%;
   left: 0px;
   opacity: 0.3;
@@ -107,5 +110,4 @@ body {
   transition: opacity 800ms ease, background-size 800ms ease,
     background-position 800ms ease;
   width: 100%;
-  z-index: 0;
 }
