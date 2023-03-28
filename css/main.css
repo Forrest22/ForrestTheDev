@@ -33,7 +33,7 @@ body {
   z-index: 3;
   margin: clamp(3rem, 10vw, 48rem) clamp(4rem, 20vw, 48rem);
   padding: 4rem;
-  border-radius: 2rem;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   text-decoration: none;
   color: whitesmoke;
   font-family: "Noto Sans JP", sans-serif;
@@ -41,14 +41,13 @@ body {
 }
 
 #blurb {
-  z-index: inherit;
-  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  z-index: 2;
 }
 
 #menu-items {
-  margin-left: clamp(4rem, 20vw, 48rem);
+  /* margin-left: clamp(4rem, 20vw, 48rem); */
   position: relative;
-  z-index: inherit;
+  z-index: 1;
 }
 
 #menu-items:hover ~ #container-background-pattern {
