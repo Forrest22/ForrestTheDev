@@ -27,26 +27,28 @@ body {
   background-position: center 50%;
 }
 
-#blurb {
-  margin-top: clamp(3rem, 10vw, 48rem);
-  margin-left: clamp(4rem, 20vw, 48rem);
-  margin-right: clamp(4rem, 20vw, 48rem);
+#card {
   position: relative;
-  z-index: 1;
-
-  color: whitesmoke;
-  cursor: pointer;
   display: block;
+  z-index: 3;
+  margin: clamp(3rem, 10vw, 48rem) clamp(4rem, 20vw, 48rem);
+  padding: 4rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: whitesmoke;
   font-family: "Noto Sans JP", sans-serif;
   font-size: clamp(1rem, 1vw, 3rem);
+}
+
+#blurb {
+  z-index: inherit;
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-  text-decoration: none;
 }
 
 #menu-items {
   margin-left: clamp(4rem, 20vw, 48rem);
   position: relative;
-  z-index: 2;
+  z-index: inherit;
 }
 
 #menu-items:hover ~ #container-background-pattern {
