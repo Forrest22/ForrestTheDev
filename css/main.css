@@ -29,22 +29,20 @@ body {
 
 #card {
   position: relative;
+  display: block;
   z-index: 3;
   margin: clamp(3rem, 10vw, 48rem) clamp(4rem, 20vw, 48rem);
   padding: 4rem;
   border-radius: 2rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(1rem, 1vw, 3rem);
 }
 
 #blurb {
-  position: relative;
   z-index: inherit;
-
-  color: whitesmoke;
-  display: block;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(1rem, 1vw, 3rem);
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-  text-decoration: none;
 }
 
 #menu-items {
