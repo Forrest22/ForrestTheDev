@@ -27,12 +27,18 @@ body {
   background-position: center 50%;
 }
 
+#card {
+  z-index: 3;
+  margin: clamp(3rem, 10vw, 48rem) clamp(4rem, 20vw, 48rem);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(20, 20, 20, 0.75);
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
 #blurb {
-  margin-top: clamp(3rem, 10vw, 48rem);
-  margin-left: clamp(4rem, 20vw, 48rem);
-  margin-right: clamp(4rem, 20vw, 48rem);
   position: relative;
-  z-index: 1;
+  z-index: inherit;
 
   color: whitesmoke;
   cursor: pointer;
@@ -46,7 +52,7 @@ body {
 #menu-items {
   margin-left: clamp(4rem, 20vw, 48rem);
   position: relative;
-  z-index: 2;
+  z-index: inherit;
 }
 
 #menu-items:hover ~ #container-background-pattern {
