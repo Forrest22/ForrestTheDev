@@ -41,7 +41,7 @@ br {
   color: whitesmoke;
   display: block;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(1rem, 1vw, 3rem);
+  font-size: clamp(0.5rem, 1vw, 3rem);
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   text-decoration: none;
 }
